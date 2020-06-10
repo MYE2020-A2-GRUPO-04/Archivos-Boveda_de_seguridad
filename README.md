@@ -40,19 +40,23 @@ familiares dentro de la bóveda.**
 
 ### 6. ELEMENTOS QUE IDENTIFICAN EL PROYECTO
 
-• Arduino MEGA.
+* Arduino MEGA.
 
-• FPM10A.
+* FPM10A.
 
-• teclado de 12 dígitos.
+* Teclado de 12 dígitos.
 
-• HC06.
+* HC06.
 
-• ELECHOUSE Modulo de reconocimiento de voz.
+* ELECHOUSE Modulo de reconocimiento de voz.
 
-• Cerradura eléctrica.
+* Cerradura eléctrica.
 
-• Display 16x2 (I2C)
+* Transformador 12VAC
+
+* TRIAC BT136
+
+* Display 16x2 (I2C)
 
 
 :facepunch:
