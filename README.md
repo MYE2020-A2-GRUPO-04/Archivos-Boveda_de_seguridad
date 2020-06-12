@@ -58,15 +58,16 @@ familiares dentro de la bóveda.**
 
 * Display 16x2 (I2C)
 
-### Librerías
 
-* Adafruit_Fingerprint
+### 7. Librerías
 
-* SoftwareSerial
+* Adafruit_Fingerprint.h
 
-* VoiceRecognitionV3
+* SoftwareSerial.h
 
-* Keypad
+* VoiceRecognitionV3.h
+
+* Keypad.h
 
 
 :facepunch:
