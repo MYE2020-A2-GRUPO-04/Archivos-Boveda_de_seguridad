@@ -69,5 +69,9 @@ familiares dentro de la bóveda.**
 
 * Keypad.h
 
+* Wire.h
+
+* LiquidCrystal_I2C.h
+
 
 :facepunch:
