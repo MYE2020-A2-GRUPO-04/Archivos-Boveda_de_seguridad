@@ -87,6 +87,9 @@ void setup() {
   Serial.begin(9600);
   pinMode(pinCerradura, OUTPUT);
   digitalWrite(pinCerradura, LOW);
+  lcd.clear();
+  lcd.setCursor(0,0);
+  lcd.print("Asegurado");
 }
 
 void loop() {
@@ -99,7 +102,7 @@ void loop() {
       pos3 = 0;
       lcd.clear();
       lcd.setCursor(0,0);
-      lcd.print("Aegurado");
+      lcd.print("Asegurado");
     }
     if (key == pass1[pos1])
     {
@@ -128,9 +131,10 @@ void loop() {
     if(pos1==0 && pos2==0 && pos3==0){
       lcd.clear();
       lcd.setCursor(0,0);
-      lcd.print("Aegurado");
+      lcd.print("Asegurado");
     }
     if(pos1==1 || pos2==1 || pos3==1){
+      lcd.clear();
       lcd.setCursor(0,0);
       lcd.print(key);
     }
@@ -163,12 +167,16 @@ void loop() {
       lcd.print("Correcto    ");
       lcd.setCursor(0,1);
       lcd.print("Abierto    ");
-      digitalWrite(13,HIGH);
+      digitalWrite(pinCerradura,HIGH);
       delay(5000);
       lcd.clear();
       lcd.setCursor(0,0);
-      lcd.print("Aegurado");
-      digitalWrite(13,LOW);
+      lcd.print("Asegurado");
+      digitalWrite(pinCerradura,LOW);
+      pos1 = 0;
+      pos2 = 0;
+      pos3 = 0;
+      var2fa = false;
     }
   }
 }
